@@ -38,9 +38,14 @@
 
   /* NAV */
   header{position:sticky;top:0;z-index:50;background:var(--parchment);border-bottom:1px solid var(--line);}
-  .navbar{display:flex;align-items:center;justify-content:space-between;height:74px;}
+  .navbar{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px;flex-wrap:wrap;}
   .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:15px;}
   .brand small{display:block;font-weight:500;font-size:10px;letter-spacing:.16em;color:var(--slate-light);text-transform:uppercase;margin-top:1px;}
+  .navright{display:flex;align-items:center;gap:18px;}
+  .langs{display:flex;gap:10px;font-size:12px;font-weight:700;letter-spacing:.04em;}
+  .langs a{color:var(--slate-light);padding:4px 2px;}
+  .langs a.active{color:var(--red);border-bottom:2px solid var(--red);}
+  .langs a:hover{color:var(--red);}
   .nav-cta{background:var(--ink);color:var(--parchment);padding:11px 20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border-radius:2px;}
   .nav-cta:hover{background:var(--red);}
 
@@ -102,7 +107,15 @@
       <div class="cross"></div>
       <div>SWITZERLAND IS GREAT<small>Since 1291</small></div>
     </div>
-    <a class="nav-cta" href="#join">Join the List</a>
+    <div class="navright">
+      <div class="langs">
+        <a href="index.html" class="active">EN</a>
+        <a href="index-fr.html">FR</a>
+        <a href="index-de.html">DE</a>
+        <a href="index-it.html">IT</a>
+      </div>
+      <a class="nav-cta" href="#join">Join the List</a>
+    </div>
   </div>
 </header>
 
