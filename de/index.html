@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SwitzerlandWorld | Celebrating Swiss Excellence</title>
-<meta name="description" content="Entdecken Sie authentische Schweizer Produkte, Künstler und Reisen. Discover the Best of Switzerland.">
+<meta name="description" content="Entdecken Sie das Beste der Schweiz: Handwerkskunst, Künstler, Reisen und Geschichten. Switzerland Is Great Since 1291.">
 <meta name="keywords" content="Schweizer Produkte, Schweiz Reisen, Schweizer Kultur">
 
 <!-- Open Graph -->
@@ -52,8 +52,9 @@
   .hero-watermark{position:absolute;right:-40px;top:-60px;font-family:'Archivo Expanded',sans-serif;font-weight:800;font-size:min(38vw,500px);line-height:1;color:rgba(28,30,27,0.07);z-index:0;}
   @media(max-width:600px){.hero-watermark{right:calc(-40px + 1cm);top:calc(-60px + 0.5cm);}}
   .hero-inner{position:relative;z-index:1;}
-  .hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:22px;}
-  .hero h1{font-size:clamp(38px,6.4vw,84px);line-height:0.98;max-width:14ch;}
+  .hero-eyebrow{display:flex;align-items:center;gap:10px;}
+  .hero-eyebrow-sub{font-size:12px;color:var(--slate-light);letter-spacing:.06em;text-transform:uppercase;margin-top:8px;font-weight:600;margin-bottom:22px;}
+  .hero h1{margin-top:22px;font-size:clamp(38px,6.4vw,84px);line-height:0.98;max-width:16ch;}
   .hero h1 .accent{color:var(--red);}
   .hero-sub{margin-top:26px;font-family:'Source Serif 4',serif;font-size:clamp(17px,1.6vw,21px);max-width:48ch;color:var(--slate);line-height:1.55;}
   .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px;}
@@ -67,9 +68,9 @@
   .poster{margin-top:30px;border-top:1px solid var(--line);}
   .poster svg{width:100%;height:180px;display:block;}
   section{padding:88px 0;}
-  .section-head{text-align:center;max-width:560px;margin:0 auto 50px;}
+  .section-head{text-align:center;max-width:620px;margin:0 auto 50px;}
   .section-head h2{font-size:clamp(28px,3.4vw,40px);margin-top:12px;}
-  .section-head p{font-family:'Source Serif 4',serif;font-size:16px;color:var(--slate-light);margin-top:14px;}
+  .section-head p{font-family:'Source Serif 4',serif;font-size:16px;color:var(--slate-light);margin-top:14px;line-height:1.6;}
   .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);}
   @media(max-width:800px){.pillars{grid-template-columns:1fr;}}
   .pillar{background:var(--parchment);padding:40px 32px;}
@@ -81,9 +82,15 @@
   .message p{font-family:'Source Serif 4',serif;font-style:italic;font-size:clamp(20px,2.6vw,30px);line-height:1.5;}
   .message .cite{margin-top:26px;font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;}
   .message .cite span{display:block;font-weight:500;color:#C9D2D6;font-size:13px;margin-top:2px;}
+  .checklist{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);margin-top:10px;}
+  @media(max-width:800px){.checklist{grid-template-columns:1fr;}}
+  .check-item{background:var(--parchment);padding:26px 28px;display:flex;align-items:center;gap:14px;}
+  .check-item .mark{color:var(--red);font-weight:800;font-size:16px;flex:none;}
+  .check-item span{font-family:'Archivo',sans-serif;font-weight:600;font-size:14.5px;}
   .newsletter{background:var(--ink);color:var(--parchment);padding:80px 0;text-align:center;}
   .newsletter h2{font-size:clamp(26px,3.4vw,38px);}
   .newsletter p{font-family:'Source Serif 4',serif;color:#C9D2D6;margin-top:14px;max-width:44ch;margin-left:auto;margin-right:auto;}
+  .newsletter .fine{font-size:13px;color:#9AA7AD;margin-top:10px;font-family:'Archivo',sans-serif;}
   .news-form{display:flex;max-width:420px;width:100%;margin:32px auto 0;}
   .news-form input{flex:1;background:transparent;border:1px solid rgba(250,248,243,.4);border-right:none;color:var(--parchment);padding:15px 16px;font-family:'Archivo',sans-serif;font-size:14px;}
   .news-form input::placeholder{color:rgba(250,248,243,.5);}
@@ -107,7 +114,7 @@
         <a href="index.html" class="active">DE</a>
         <a href="../it/index.html">IT</a>
       </div>
-      <a class="nav-cta" href="#join">Der Liste beitreten</a>
+      <a class="nav-cta" href="#join">Der Reise beitreten</a>
     </div>
   </div>
 </header>
@@ -117,13 +124,13 @@
   <div class="wrap hero-inner">
     <div class="hero-eyebrow">
       <div class="cross"></div>
-      <span class="eyebrow">Schweizer Exzellenz feiern</span>
+      <span class="eyebrow">🇨🇭 Switzerland World</span>
     </div>
-    <h1>Discover The<br>Best <span class="accent">of Switzerland.</span></h1>
-    <p class="hero-sub">Das digitale Zuhause der Schweiz, für alle, die Schweizer Exzellenz lieben. Produkte, Künstler, Reisen und Geschichten, ausgewählt von einem Schweizer Auswanderer, der die Schweiz im Herzen trägt.</p>
+    <div class="hero-eyebrow-sub">Celebrating Swiss Excellence Since 1291</div>
+    <h1>Entdecken Sie das Beste der Schweiz.</h1>
+    <p class="hero-sub">Von außergewöhnlicher Handwerkskunst und ikonischen Marken bis zu bemerkenswerten Orten, inspirierenden Menschen und zeitlosen Traditionen.</p>
     <div class="hero-actions">
-      <a class="btn btn-solid" href="#join">Der Liste beitreten</a>
-      <a class="btn btn-outline" href="#about">Unsere Geschichte</a>
+      <a class="btn btn-solid" href="#join">Der Reise beitreten</a>
     </div>
     <div class="poster">
       <svg viewBox="0 0 1200 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,41 +146,83 @@
 
 <section id="about">
   <div class="wrap section-head">
-    <span class="eyebrow">Worum es geht</span>
-    <h2>Kein Shop. Keine Reiseseite. Das Zuhause der Schweizer Exzellenz.</h2>
-    <p>Wir beginnen mit der Geschichte. Produkte, Künstler und Reisen folgen als Nächstes - Stück für Stück, ein Stück Schweiz nach dem anderen.</p>
+    <span class="eyebrow">Was ist Switzerland World?</span>
+    <h2>Mehr als eine Website.</h2>
+    <p>Switzerland World widmet sich der Entdeckung und dem Teilen dessen, was die Schweiz außergewöhnlich macht.</p>
+    <p>Wir erkunden die Menschen, Produkte, Handwerkskunst, Kultur, Reiseziele und Geschichten, die die Schweiz seit mehr als sieben Jahrhunderten geprägt haben.</p>
   </div>
+</section>
 
-  <div class="pillars">
+<section id="discover" class="section-alt" style="background:var(--stone);">
+  <div class="wrap section-head">
+    <span class="eyebrow">Entdecken</span>
+    <h2>Was Sie erwartet</h2>
+  </div>
+  <div class="wrap">
+    <div class="pillars">
     <div class="pillar">
       <div class="icon">🇨🇭</div>
       <h3>Swiss Made</h3>
-      <p>Demnächst - jedes Produkt mit einer eigenen Geschichte. Ein Uhrmacher, ein Käser, eine Familie, kein Katalog.</p>
+      <p>Außergewöhnliche Produkte, gefertigt mit Präzision, Qualität und Tradition.</p>
+    </div>
+    <div class="pillar">
+      <div class="icon">🏔</div>
+      <h3>Die Schweiz entdecken</h3>
+      <p>Versteckte Dörfer, ikonische Landschaften, unvergessliche Erlebnisse.</p>
     </div>
     <div class="pillar">
       <div class="icon">🎨</div>
-      <h3>Künstler &amp; Handwerker</h3>
-      <p>Demnächst - lernen Sie die Schreiner, Maler und Keramiker kennen, die Schweizer Handwerk am Leben erhalten.</p>
+      <h3>Künstler & Handwerker</h3>
+      <p>Lernen Sie die Menschen kennen, die Schweizer Handwerkskunst und Kreativität bewahren.</p>
     </div>
     <div class="pillar">
-      <div class="icon">✈️</div>
-      <h3>Die Schweiz entdecken</h3>
-      <p>Demnächst - echte Regionen, echte Reisen, erzählt von jemandem, der dort aufgewachsen ist.</p>
+      <div class="icon">🍷</div>
+      <h3>Die Schweiz schmecken</h3>
+      <p>Regionale Spezialitäten, Familientraditionen und authentische Aromen.</p>
+    </div>
+    <div class="pillar">
+      <div class="icon">🚆</div>
+      <h3>Besser reisen</h3>
+      <p>Kuratierte Reiserouten, lokale Insidertipps und unvergessliche Reisen.</p>
+    </div>
+    <div class="pillar">
+      <div class="icon">💡</div>
+      <h3>Innovation</h3>
+      <p>Von jahrhundertealten Traditionen zu weltweit führender Innovation.</p>
+    </div>
     </div>
   </div>
 </section>
 
 <section class="message">
   <div class="wrap">
-    <p>„Ich bin Schweizer und lebe heute in Kalifornien. Ich habe SwitzerlandWorld.com gegründet, um das Beste der Schweiz zu teilen - eine Geschichte, ein Produkt, ein Künstler nach dem anderen."</p>
-    <div class="cite">- Der Gründer<span>Schweizer Unternehmer mit internationaler Karriere im Dienst führender Luxushäuser, Südkalifornien</span></div>
+    <p>„Ich habe Switzerland World gegründet, um die Schweiz zu zeigen, die ich kenne - nicht nur die berühmten Sehenswürdigkeiten, sondern das Handwerk, die Menschen, die Traditionen und die Geschichten, die dieses Land außergewöhnlich machen.“</p>
+    <div class="cite">- Der Gründer<span>Schweizer Unternehmer mit internationaler Karriere im Dienst führender Luxushäuser, ansässig in Südkalifornien.</span></div>
+  </div>
+</section>
+
+<section id="coming-soon">
+  <div class="wrap section-head">
+    <span class="eyebrow">Demnächst</span>
+    <h2>Was als Nächstes kommt</h2>
+  </div>
+  <div class="wrap">
+    <div class="checklist">
+    <div class="check-item"><span class="mark">✔</span><span>Kuratierte Geschichten</span></div>
+    <div class="check-item"><span class="mark">✔</span><span>Vorgestellte Handwerker</span></div>
+    <div class="check-item"><span class="mark">✔</span><span>Schweizer Produkte</span></div>
+    <div class="check-item"><span class="mark">✔</span><span>Reiseführer</span></div>
+    <div class="check-item"><span class="mark">✔</span><span>Exklusive Interviews</span></div>
+    <div class="check-item"><span class="mark">✔</span><span>Newsletter</span></div>
+    </div>
   </div>
 </section>
 
 <div class="newsletter" id="join">
   <div class="wrap">
-    <h2>Seien Sie von Anfang an dabei.</h2>
-    <p>Eine E-Mail, sobald die ersten Produkte, Künstler und Geschichten starten. Kein Spam, kein Lärm - einfach die Schweiz, mit Schweizer Qualität.</p>
+    <h2>Werden Sie Teil von Switzerland World</h2>
+    <p>Eine durchdachte E-Mail, sobald wir neue Geschichten veröffentlichen, außergewöhnliche Handwerker entdecken oder kuratierte Erlebnisse starten.</p>
+    <p class="fine">Kein Spam. Nur das Beste der Schweiz.</p>
     <form class="news-form" action="https://switzerlandisgreatsince1291.us9.list-manage.com/subscribe/post?u=7f640e539e50d4f6eb8822540&amp;id=b352108053&amp;f_id=00c029e1f0" method="post" target="_blank" novalidate>
       <input type="email" name="EMAIL" placeholder="sie@email.com" required>
       <div style="position:absolute;left:-5000px;" aria-hidden="true">
